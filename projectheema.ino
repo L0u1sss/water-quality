@@ -17,8 +17,11 @@ int value = 0;
 #include <Wire.h>
 LiquidCrystal_I2C lcd(0x27, 20, 2);
 
-//#define sw 34
+#include <TridentTD_LineNotify.h>
+#define LINE_TOKEN  "WHjL3kWVPCibJDtYaWeTvRQQ5uqImrY2z4Uub5WUjFo"
 
+#define sw 15
+int previousValue = 0;
 //ec sersor
 #include <OneWire.h>
 #define StartConvert 0

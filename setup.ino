@@ -11,13 +11,13 @@ void setup()
     delay(500);
     Serial.print(".");
   }
-
+  LINE.setToken(LINE_TOKEN);
   Serial.println("");
   Serial.println("WiFi connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
 
-//  pinMode(sw, INPUT);
+  pinMode(sw, INPUT);
   pinMode(TdsSensorPin, INPUT);
   
   lcd.init();
