@@ -15,9 +15,14 @@ int value = 0;
 
 #include <LiquidCrystal_I2C.h>
 #include <Wire.h>
-LiquidCrystal_I2C lcd(0x27, 20, 2);
+LiquidCrystal_I2C lcd(0x27, 20, 4);
 
-//#define sw 34
+#include <TridentTD_LineNotify.h>
+#define LINE_TOKEN  "WHjL3kWVPCibJDtYaWeTvRQQ5uqImrY2z4Uub5WUjFo"
+
+#define sw 13
+
+int previousValue = 0;
 
 //ec sersor
 #include <OneWire.h>
